@@ -1,0 +1,19 @@
+###
+@server=http://localhost:4300
+
+###
+GET {{server}}/jokes/GetAllJokes
+
+###
+POST {{server}}/jokes
+Content-Type: application/json
+
+{
+    "data":{
+        "newjoke" : "abncvbn",
+        "categoryid":2
+    }
+}
+
+###
+DELETE {{server}}/jokes/23
